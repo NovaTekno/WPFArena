@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="ScrollableUI" Height="450" Width="800">
     <Grid>
-        <ScrollViewer>
+        <ScrollViewer HorizontalScrollBarVisibility="Auto">
             <Image Source="../Resources/Penguins.jpg" Stretch="None" />
         </ScrollViewer>
     </Grid>
