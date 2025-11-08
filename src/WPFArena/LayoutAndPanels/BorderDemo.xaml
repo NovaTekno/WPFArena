@@ -1,0 +1,16 @@
+<Window x:Class="WPFArena.LayoutAndPanels.BorderDemo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:WPFArena.LayoutAndPanels"
+        mc:Ignorable="d"
+        Title="BorderDemo" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="4">
+            <Border BorderThickness="3" BorderBrush="Blue" CornerRadius="6">
+                <TextBlock Text="Hello from Center" FontSize="25" HorizontalAlignment="Center" />
+            </Border>
+        </StackPanel>
+    </Grid>
+</Window>

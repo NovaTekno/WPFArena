@@ -30,5 +30,11 @@ namespace WPFArena
             ScrollableUI scrollalbeUi = new ScrollableUI();
             scrollalbeUi.Show();
         }
+        
+        private void BorderDemo_Click(object sender, RoutedEventArgs e)
+        {
+            BorderDemo borderDemo = new BorderDemo();
+            borderDemo.Show();
+        }
     }
 }
