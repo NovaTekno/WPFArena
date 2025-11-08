@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_File">
+                    <MenuItem Header="Layout And Panels" Click="layoutAndPanels_Click"></MenuItem>
+                </MenuItem>
+            </Menu>
+        </DockPanel>
     </Grid>
 </Window>
