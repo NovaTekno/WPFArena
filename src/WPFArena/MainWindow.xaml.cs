@@ -13,10 +13,16 @@ namespace WPFArena
             InitializeComponent();
         }
         
-        private void layoutAndPanels_Click(object sender, RoutedEventArgs e)
+        private void GridDemo_Click(object sender, RoutedEventArgs e)
         {
             GridDemo gridDemo = new GridDemo();
             gridDemo.Show();
+        }
+        
+        private void DynamicGridSizing_Click(object sender, RoutedEventArgs e)
+        {
+            DynamicGridSizing dynamicGridSizing = new DynamicGridSizing();
+            dynamicGridSizing.Show();
         }
     }
 }

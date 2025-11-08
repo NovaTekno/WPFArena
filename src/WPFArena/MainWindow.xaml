@@ -9,8 +9,9 @@
     <Grid>
         <DockPanel>
             <Menu DockPanel.Dock="Top">
-                <MenuItem Header="_File">
-                    <MenuItem Header="Layout And Panels" Click="layoutAndPanels_Click"></MenuItem>
+                <MenuItem Header="Layout And Panelse">
+                    <MenuItem Header="Grid Demo" Click="GridDemo_Click"></MenuItem>
+                    <MenuItem Header="Dynamic Grid Sizing" Click="DynamicGridSizing_Click"></MenuItem>
                 </MenuItem>
             </Menu>
         </DockPanel>
