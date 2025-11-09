@@ -48,5 +48,11 @@ namespace WPFArena
             PaintingCircles paintingCircles = new PaintingCircles();
             paintingCircles.Show();
         }
+        
+        private void TabbedUI_Click(object sender, RoutedEventArgs e)
+        {
+            TabbedUI tabbedUi = new TabbedUI();
+            tabbedUi.Show();
+        }
     }
 }
