@@ -36,5 +36,11 @@ namespace WPFArena
             BorderDemo borderDemo = new BorderDemo();
             borderDemo.Show();
         }
+        
+        private void CanvasDemo_Click(object sender, RoutedEventArgs e)
+        {
+            CanvasDemo canvasDemo = new CanvasDemo();
+            canvasDemo.Show();
+        }
     }
 }
