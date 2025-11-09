@@ -60,5 +60,11 @@ namespace WPFArena
             DynamicTabConstruction dynamicTabbedUi = new DynamicTabConstruction();
             dynamicTabbedUi.Show();
         }
+        
+        private void DragAndDropDemo_Click(object sender, RoutedEventArgs e)
+        {
+            DragAndDropDemo dragAndDrop = new DragAndDropDemo();
+            dragAndDrop.Show();
+        }
     }
 }

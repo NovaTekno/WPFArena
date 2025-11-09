@@ -18,6 +18,7 @@
                     <MenuItem Header="Canvas Demo 2" Click="CanvasDemo2_Click"></MenuItem>
                     <MenuItem Header="Tabbed UI" Click="TabbedUI_Click"></MenuItem>
                     <MenuItem Header="Dynamic Tabbed UI" Click="DynamicTabbedUI_Click"></MenuItem>
+                    <MenuItem Header="Drag and Drop Example" Click="DragAndDropDemo_Click"></MenuItem>
                 </MenuItem>
             </Menu>
         </DockPanel>
