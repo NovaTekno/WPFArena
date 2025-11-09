@@ -79,5 +79,11 @@ namespace WPFArena
             ContentControlDemo contentControlDemo = new ContentControlDemo();
             contentControlDemo.Show();
         }
+        
+        private void HeaderedContentControlDemo_Click(object sender, RoutedEventArgs e)
+        {
+            HeaderedContentControl headeredContentControlDemo = new HeaderedContentControl();
+            headeredContentControlDemo.Show();
+        }
     }
 }
