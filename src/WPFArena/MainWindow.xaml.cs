@@ -85,5 +85,11 @@ namespace WPFArena
             HeaderedContentControl headeredContentControlDemo = new HeaderedContentControl();
             headeredContentControlDemo.Show();
         }
+        
+        private void ImagesDemo_Click(object sender, RoutedEventArgs e)
+        {
+            ImagesDemo imagesDemo = new ImagesDemo();
+            imagesDemo.Show();
+        }
     }
 }

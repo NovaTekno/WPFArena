@@ -1,0 +1,20 @@
+<Window x:Class="WPFArena.StandardControls.ImagesDemo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:WPFArena.StandardControls"
+        mc:Ignorable="d"
+        Title="ImagesDemo" Height="450" Width="800">
+    <DockPanel>
+        <Button DockPanel.Dock="Top" FontSize="20" Margin="4" Padding="4" Click="OnOpenImage">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="../Resources/open.png" Height="20" Width="20"/>
+                <TextBlock Text="Open Image File..." Margin="20,0,0,0" VerticalAlignment="Center"></TextBlock>
+            </StackPanel>
+        </Button>
+        <ScrollViewer BorderBrush="Black" Margin="4" BorderThickness="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <Image x:Name="_image" Stretch="None"></Image>
+        </ScrollViewer>
+    </DockPanel>
+</Window>
