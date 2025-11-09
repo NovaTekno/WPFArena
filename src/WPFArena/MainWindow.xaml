@@ -22,6 +22,7 @@
                 </MenuItem>
                 <MenuItem Header="Standard Controls">
                     <MenuItem Header="TextBox Demo 1" Click="TextBoxDemo1_Click"/>
+                    <MenuItem Header="ContentControl Demo 1" Click="ContentControlDemo_Click"/>
                 </MenuItem>
             </Menu>
         </DockPanel>
