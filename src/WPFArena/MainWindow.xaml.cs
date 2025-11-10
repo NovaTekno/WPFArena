@@ -103,5 +103,11 @@ namespace WPFArena
             BitmapImageSourceDemo bitmapImageSourcedemo = new BitmapImageSourceDemo();
             bitmapImageSourcedemo.Show();
         }
+        //TooltipDemo_Click
+        private void TooltipDemo_Click(object sender, RoutedEventArgs e)
+        {
+            TooltipDemo tooltipDemo = new TooltipDemo();
+            tooltipDemo.Show();
+        }
     }
 }
