@@ -134,5 +134,11 @@ namespace WPFArena
             CheckBoxAndRadioButton checkboxAndRadionButtonDemo = new CheckBoxAndRadioButton();
             checkboxAndRadionButtonDemo.Show();
         }
+        
+        private void TabOrderDemo_Click(object sender, RoutedEventArgs e)
+        {
+            TabOrderManipulation tabOrderManipulation = new TabOrderManipulation();
+            tabOrderManipulation.Show();
+        }
     }
 }

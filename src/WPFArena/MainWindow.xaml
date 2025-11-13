@@ -31,6 +31,7 @@
                     <MenuItem Header="ItemsList Demo" Click="ItemsListDemo_Click"/>
                     <MenuItem Header="Standard Menu Demo" Click="StandardMenuDemo_Click"/>
                     <MenuItem Header="CheckBox and RadioButtons Demo" Click="CheckBoxAndRadioButtonsDemo_Click"/>
+                    <MenuItem Header="Tab Order Demo" Click="TabOrderDemo_Click"/>
                 </MenuItem>
                 <MenuItem Header="Complex Examples">
                     <MenuItem Header="Calendar Window" Click="CalendaraWindow_Click"/>
