@@ -128,5 +128,11 @@ namespace WPFArena
             StandardMenu standardMenu = new StandardMenu();
             standardMenu.Show();
         }
+        
+        private void CheckBoxAndRadioButtonsDemo_Click(object sender, RoutedEventArgs e)
+        {
+            CheckBoxAndRadioButton checkboxAndRadionButtonDemo = new CheckBoxAndRadioButton();
+            checkboxAndRadionButtonDemo.Show();
+        }
     }
 }
