@@ -116,5 +116,11 @@ namespace WPFArena
             ComplexGridExample complexGridWindow = new ComplexGridExample();
             complexGridWindow.Show();
         }
+        
+        private void ItemsListDemo_Click(object sender, RoutedEventArgs e)
+        {
+            ItemsList itemsListDemo = new ItemsList();
+            itemsListDemo.Show();
+        }
     }
 }

@@ -1,0 +1,44 @@
+<Window x:Class="WPFArena.StandardControls.ItemsList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:WPFArena.StandardControls"
+        mc:Ignorable="d"
+        Title="ItemsList" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <ComboBox Margin="4" x:Name="_langCombo" SelectionChanged="OnLangChanged">
+            <ComboBoxItem Padding="4">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="../Resources/cs-icon.png" Width="32" Stretch="Uniform" />
+                    <TextBlock Text="C#" VerticalAlignment="Center" FontSize="20" Margin="10,0,0,0" />
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="../Resources/cpp.jpg" Width="32" Stretch="Uniform" />
+                    <TextBlock Text="C++" VerticalAlignment="Center" FontSize="20" Margin="10,0,0,0" />
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="../Resources/visualbasic.jpg" Width="32" Stretch="Uniform" />
+                    <TextBlock Text="VB" VerticalAlignment="Center" FontSize="20" Margin="10,0,0,0" />
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="../Resources/F#.png" Width="32" Stretch="Uniform" />
+                    <TextBlock Text="F#" VerticalAlignment="Center" FontSize="20" Margin="10,0,0,0" />
+                </StackPanel>
+            </ComboBoxItem>
+        </ComboBox>
+        <GroupBox Header="Some Keywords" Grid.Row="1" Margin="4">
+            <ListBox x:Name="_keywordList" Margin="4"></ListBox>
+        </GroupBox>
+    </Grid>
+</Window>
