@@ -34,5 +34,10 @@ namespace SingleObjectBinding
         {
             _person.Age++;
         }
+
+        private void OnIncreaseWidth(object sender, RoutedEventArgs e)
+        {
+            widthButton.Width++;
+        }
     }
 }

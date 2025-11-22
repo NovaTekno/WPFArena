@@ -10,5 +10,6 @@
         <TextBlock Text="{Binding Name}" />
         <TextBlock Text="{Binding Age}" />
         <Button Click="OnIncreaseAge">Increase Age</Button>
+        <Button Width = "200" Click="OnIncreaseWidth" Name="widthButton" Content="{Binding ActualWidth, RelativeSource={RelativeSource Self}}" />
     </StackPanel>
 </Window>
