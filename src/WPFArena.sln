@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewWindows", "NewWindows\Ne
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DialogBoxDemo", "DialogBoxDemo\DialogBoxDemo.csproj", "{598FDF4E-875A-43AC-91D4-AB2536AFCC73}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonDialogs", "CommonDialogs\CommonDialogs.csproj", "{854453D1-B27B-4E77-B15A-C786C986AB8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,9 +28,14 @@ Global
 		{598FDF4E-875A-43AC-91D4-AB2536AFCC73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{598FDF4E-875A-43AC-91D4-AB2536AFCC73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{598FDF4E-875A-43AC-91D4-AB2536AFCC73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{854453D1-B27B-4E77-B15A-C786C986AB8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{854453D1-B27B-4E77-B15A-C786C986AB8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{854453D1-B27B-4E77-B15A-C786C986AB8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{854453D1-B27B-4E77-B15A-C786C986AB8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DD970496-EC9E-4AD2-8DA4-520F5DC38EF5} = {9DD7A5B5-FD20-4891-B20A-B43F445FC86B}
 		{598FDF4E-875A-43AC-91D4-AB2536AFCC73} = {9DD7A5B5-FD20-4891-B20A-B43F445FC86B}
+		{854453D1-B27B-4E77-B15A-C786C986AB8E} = {9DD7A5B5-FD20-4891-B20A-B43F445FC86B}
 	EndGlobalSection
 EndGlobal
