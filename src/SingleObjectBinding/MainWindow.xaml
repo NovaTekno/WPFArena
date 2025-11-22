@@ -11,5 +11,8 @@
         <TextBlock Text="{Binding Age}" />
         <Button Click="OnIncreaseAge">Increase Age</Button>
         <Button Width = "200" Click="OnIncreaseWidth" Name="widthButton" Content="{Binding ActualWidth, RelativeSource={RelativeSource Self}}" />
+        <TextBlock Text = "Window Height is: ">
+            <TextBlock Text= "{Binding ActualHeight, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"/>
+        </TextBlock>
     </StackPanel>
 </Window>
