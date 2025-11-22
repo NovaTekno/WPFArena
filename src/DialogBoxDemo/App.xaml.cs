@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using System.Windows;
 
 namespace DialogBoxDemo
@@ -6,7 +7,7 @@ namespace DialogBoxDemo
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
-    public partial class App : System.Windows.Application
+    public partial class App : Application
     {
         public App()
         {
@@ -14,7 +15,7 @@ namespace DialogBoxDemo
             //Method1();
         }
         
-        protected void Application_OnStartup(object sender, StartupEventArgs e)
+        void Application_OnStartup(object sender, StartupEventArgs e)
         {
             string text = "Hello, default!";
             if (e.Args.Length > 0)
@@ -27,6 +28,7 @@ namespace DialogBoxDemo
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
+            Console.WriteLine("OnStartup Called!");
         }
 
         /*protected override void Method1()

@@ -30,5 +30,14 @@ namespace DialogBoxDemo
             InitializeComponent();
             this.Title = textCaption;
         }
+
+        private void OnEnterData(object sender, RoutedEventArgs e)
+        {
+            var dlg = new DetailsDialog();
+            if (dlg.ShowDialog() == true)
+            {
+                _text.Text = string.Format("Hi, {0}! I see you live in {1}.", dlg.FullName, dlg.City);
+            }
+        }
     }
 }
