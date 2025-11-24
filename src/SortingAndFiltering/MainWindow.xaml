@@ -38,6 +38,8 @@
             <ComboBox Width="150" Margin="6,0,0,0" x:Name="_sortField" SelectedIndex="0" ItemsSource="{StaticResource sortFields}" DisplayMemberPath="DisplayName" SelectedValuePath="PropertyName"></ComboBox>
             <CheckBox Margin="10,0,0,0" Content="Ascending" VerticalAlignment="Center" IsChecked="True" x:Name="_ascending" />
             <Button Margin="4,0,0,0" Content="Sort" Click="SortButton_OnClick" />
+            <TextBox Margin="10,0,0,0" x:Name="_filterText" Width="120" />
+            <Button Margin="4,0,0,0" Content="Filter" Click="FilterButton_OnClick" />
         </StackPanel>
     </Grid>
 </Window>

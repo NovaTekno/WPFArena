@@ -37,5 +37,18 @@ namespace SortingAndFiltering
                 view.SortDescriptions.Add(new SortDescription((string)_sortField.SelectedValue, _ascending.IsChecked==true?ListSortDirection.Ascending:ListSortDirection.Descending));
             }
         }
+
+        private void FilterButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            var view = CollectionViewSource.GetDefaultView(DataContext);
+            if (string.IsNullOrWhiteSpace(_filterText.Text))
+                view.Filter = null;
+            else
+            {
+                view.Filter = obj =>
+                    ((Process)obj).ProcessName.IndexOf(_filterText.Text, StringComparison.InvariantCultureIgnoreCase) >
+                    -1;
+            }
+        }
     }
 }
