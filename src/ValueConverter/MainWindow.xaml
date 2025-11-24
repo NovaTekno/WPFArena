@@ -28,7 +28,7 @@
         <ListBox ItemsSource="{Binding}" Grid.Row="2" HorizontalContentAlignment="Stretch">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <Border Margin="4" BorderBrush="Black" Padding="4" BorderThickness="2" Background="{Binding generalForecast, Converter={StaticResource gf2brush}}">
+                    <Border x:Name="_border" Margin="4" BorderBrush="Black" Padding="4" BorderThickness="2" Background="{Binding generalForecast, Converter={StaticResource gf2brush}}">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontSize="20" FontWeight="Bold" Text="{Binding generalForecast}" />
                             <TextBlock FontSize="16" Margin="10,0,0,0" VerticalAlignment="Bottom" Text="{Binding temperatureLow, StringFormat = 'Low: \{0:N2\}'}" />
@@ -36,6 +36,20 @@
                             <TextBlock FontSize="16" Margin="20,0,0,0" VerticalAlignment="Bottom" Text="{Binding precipitation, StringFormat = 'Percip: \{0:N2\}'}" />
                         </StackPanel>
                     </Border>
+                    <DataTemplate.Triggers>
+                        <DataTrigger Binding="{Binding generalForecast}" Value="Sunny">
+                            <Setter Property="Background" Value="Yellow" TargetName="_border"></Setter>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding generalForecast}" Value="Snowy">
+                            <Setter Property="Background" Value="LightBlue" TargetName="_border"></Setter>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding generalForecast}" Value="Rainy">
+                            <Setter Property="Background" Value="LightGreen" TargetName="_border"></Setter>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding generalForecast}" Value="Dry">
+                            <Setter Property="Background" Value="LightYellow" TargetName="_border"></Setter>
+                        </DataTrigger>
+                    </DataTemplate.Triggers>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
