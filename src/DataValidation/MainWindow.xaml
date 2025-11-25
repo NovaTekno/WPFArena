@@ -6,6 +6,17 @@
         xmlns:local="clr-namespace:DataValidation"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <ControlTemplate x:Key="errorTemplate">
+            <Border BorderBrush="Red" BorderThickness="2">
+                <Grid>
+                    <AdornedElementPlaceholder x:Name="_el"></AdornedElementPlaceholder>
+                    <TextBlock Text="{Binding [0].ErrorContent}" Foreground="Red" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,6,0">
+                    </TextBlock>
+                </Grid>
+            </Border>
+        </ControlTemplate>
+    </Window.Resources>
     <Grid TextBlock.FontSize="16">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -17,7 +28,7 @@
         </Grid.ColumnDefinitions>
         <TextBlock Text="Name:" Margin="6"></TextBlock>
         <!-- <TextBox Text="{Binding Name, ValidatesOnExceptions=True, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" Grid.Column="1" Margin="6" /> -->
-        <TextBox Grid.Column="1" Margin="6">
+        <TextBox Grid.Column="1" Margin="6" Validation.ErrorTemplate="{StaticResource errorTemplate}">
             <Binding Path="Name" ValidatesOnDataErrors="True" UpdateSourceTrigger="PropertyChanged">
                 <Binding.ValidationRules>
                     <local:MinCharsRule MinimumChars="3" />
